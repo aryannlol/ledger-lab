@@ -1,0 +1,30 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local SQLite databases (re-created dynamically by app.py)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Agent skills cache / temp artifacts
+.agent/
+skills-lock.json

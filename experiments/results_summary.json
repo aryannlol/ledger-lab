@@ -1,0 +1,86 @@
+{
+  "experiment_a_scalability": [
+    {
+      "transaction_count": 1000,
+      "entries_count": 2000,
+      "generation_time_ms": 45.36,
+      "migration_duration_ms": 42.67,
+      "migration_throughput_rec_sec": 46875.73,
+      "reconciliation_duration_ms": 83.16,
+      "reconciliation_status": "pass",
+      "discrepancies": 0
+    },
+    {
+      "transaction_count": 5000,
+      "entries_count": 10000,
+      "generation_time_ms": 121.7,
+      "migration_duration_ms": 205.12,
+      "migration_throughput_rec_sec": 48752.43,
+      "reconciliation_duration_ms": 230.23,
+      "reconciliation_status": "pass",
+      "discrepancies": 0
+    },
+    {
+      "transaction_count": 10000,
+      "entries_count": 20000,
+      "generation_time_ms": 262.86,
+      "migration_duration_ms": 409.14,
+      "migration_throughput_rec_sec": 48882.9,
+      "reconciliation_duration_ms": 420.36,
+      "reconciliation_status": "pass",
+      "discrepancies": 0
+    }
+  ],
+  "experiment_b_failure_recovery": {
+    "initial_failure_batch": 4,
+    "batches_before_failure": 3,
+    "checkpoints_saved": 4,
+    "resumption_status": "completed",
+    "resumed_total_batches": 10,
+    "final_reconciliation_status": "pass",
+    "missing_count": 0,
+    "duplicate_count": 0
+  },
+  "experiment_c_integrity": {
+    "injected_deletions": 3,
+    "injected_alterations": 2,
+    "detected_missing": 3,
+    "detected_hash_mismatches": 2,
+    "pre_repair_status": "fail",
+    "repaired_total": 5,
+    "post_repair_status": "pass",
+    "post_repair_discrepancies": 0
+  },
+  "experiment_d_batch_size": [
+    {
+      "batch_size": 100,
+      "duration_ms": 1226.16,
+      "throughput_rec_sec": 8155.57,
+      "status": "completed"
+    },
+    {
+      "batch_size": 500,
+      "duration_ms": 324.03,
+      "throughput_rec_sec": 30861.15,
+      "status": "completed"
+    },
+    {
+      "batch_size": 1000,
+      "duration_ms": 223.31,
+      "throughput_rec_sec": 44780.64,
+      "status": "completed"
+    },
+    {
+      "batch_size": 2500,
+      "duration_ms": 121.87,
+      "throughput_rec_sec": 82052.76,
+      "status": "completed"
+    },
+    {
+      "batch_size": 5000,
+      "duration_ms": 99.97,
+      "throughput_rec_sec": 100031.71,
+      "status": "completed"
+    }
+  ]
+}
