@@ -44,7 +44,9 @@ The system strictly isolates storage targets into three distinct SQLite database
 
 - **Backend**: Python 3.10+, Flask
 - **Storage**: SQLite 3 (WAL mode enabled for concurrent read/write isolation)
-- **Frontend**: Single-Page Application (HTML5, Vanilla JavaScript ES6+, Responsive CSS)
+- **Frontend**: Single-Page Application (HTML5, Vanilla JavaScript ES6+, GSAP 3.12.5 animations)
+- **Animation & Visualizer**: GreenSock Animation Platform (GSAP Core & Flip) for event-driven simulation
+- **Real-Time Telemetry**: Server-Sent Events (SSE) stream (`/api/stream/:job_id`) and deterministic state machine
 - **Cryptographic Hashing**: Standard Library `hashlib.sha256`
 - **Dependencies**: Minimal (`Flask` only — stdlib-first design)
 
